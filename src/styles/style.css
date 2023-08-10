@@ -1,0 +1,35 @@
+
+body {
+    background-color: #141D39;
+    background-image: image('assets/main_bg_img.jpg');
+}
+h1 {
+    font-family: Inter;
+    color: #92D2A9;
+    font-size: 50px;
+}
+
+p {
+    font-family: Mukta;
+    color: #B8CB98;
+}
+
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-content: center;
+}
