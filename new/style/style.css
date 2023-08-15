@@ -1,14 +1,20 @@
 /* UNIVERSAL */
 body {
-    background-image: url('../assets/main_bg_img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
 }
 
 h1, h2, h3 {
-    font-family: inter;
-    color: #FB183A;
+    font-family: inter, sans-serif;
+    color: #F2385A;
+}
+
+a, p{
+    font-family: Mukta, sans-serif;
+    color: black;
 }
 
 h1 {
@@ -26,121 +32,85 @@ h3 {
     font-weight: normal;
 }
 
-a, button, p {
-    font-family: Mukta;
-    color: #EDD79E;
+.btn {
+    border-color: white;
+    color: white
 }
 
-.btn-text {
-    font-size: 15px;
-}
-
-
-button {
-    margin-right: 15px;
-    background: none;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #EDD79E;
-}
-
-button:hover {
-    border-color: #FB183A;
-    cursor: pointer;
-    .btn-text {
-        color: #FB183A;
-    };
-}
-
-/* HEADER */
-
-header {
-    display: flex;
-    max-width: 100vw;
-    height: 100vh;
-}
-
-#header {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-}
-
-main {
-    /* */
-}
-
-.container {
-    margin-top: 5px;
-    padding-top: 15px;
+.btn:hover {
+    border-color: #7580BF;
+    color: #7580BF;
 }
 
 .row {
-    display: inline-flex;
-    flex-direction: row;
+    padding-top: 8px;
 }
 
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background: none;
-    margin: 10px;
-}
-
-.header-content {
-    display: flex;
-    align-content: center;
-}
-
-/* navbar 
-
-.navbar {
-    list-style-type: none;
-    background-color: #333;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    float: left;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
+.title {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-.dropdown {
-    position: relative;
+
+/* PARALAX */
+
+
+body, html {
+    height: 100vh;
+}
+  
+.parallax-container {
+background-image: url("../assets/images/background.jpg");
+
+height: 100vh;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
+/* HEADER */
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+#header-container {
+    width: 500px;
+    align-self: center;
+}
+
+#hero-txt {
+    color: white;
+    font-size: 75px;
+}
 
 /* PROJECTS */
 
 #projects {
-    display: grid;
-    grid-template-areas: 
-                        "project-header project-header project-header"
-                        "card-1 card-2 card-3";
+    background-color: #F24130;
+}
+
+#projects-title {
+    color:white;
+}
+
+.projects-card-title {
+    color: #F24130;
+}
+
+.projects-card-btn {
+    color: #F24130;
+    border-color: #F24130;
+}
+
+.card-img-top {
+    max-height: 61%;
 }
