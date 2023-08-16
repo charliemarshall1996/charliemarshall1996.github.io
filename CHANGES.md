@@ -12,5 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - README.md
+- Wrapped experience and education tables in .table-responsive divs to make responsive
 ### Fixed
 - Styling bugs
+- Unorganised table columns in experience table.
