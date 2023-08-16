@@ -43,13 +43,25 @@ h3 {
 }
 
 .row {
-    padding-top: 8px;
+    padding-top: 5%;
+    margin-bottom: 5%;
 }
 
 .title {
     text-align: center;
 }
 
+.disabled {
+    color: gray;
+}
+
+table, .table {
+    max-width: 100%;
+}
+
+.container {
+    padding-bottom: 5%;
+}
 
 /* PARALAX */
 
@@ -83,20 +95,43 @@ header {
 }
 
 #header-container {
-    width: 500px;
     align-self: center;
+}
+
+#hero-col {
+    flex-shrink: inherit;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #hero-txt {
     color: white;
-    font-size: 75px;
+    font-size: 350%;
 }
 
 /* ABOUT ME */
 #about-me {
     min-height: 100vh;
     height: fit-content;
+    display: flex;
+}
 
+.accordion {
+    margin-bottom: 10%;
+}
+
+.accordion-body {
+    max-width: 100%;
+}
+
+.accordion-btn {
+    color:#F2385A;
+}
+
+.accordion-btn:hover {
+    border-color: #7580BF;
+    color: #7580BF;
 }
 
 /* PROJECTS */
@@ -114,7 +149,7 @@ header {
     color: #F24130;
 }
 
-.projects-card-btn {
+.projects-card-btn, .accordion-btn {
     color: #F24130;
     border-color: #F24130;
 }
