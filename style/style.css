@@ -92,10 +92,18 @@ header {
     font-size: 75px;
 }
 
+/* ABOUT ME */
+#about-me {
+    min-height: 100vh;
+    height: fit-content;
+
+}
+
 /* PROJECTS */
 
 #projects {
     background-color: #F24130;
+    height: fit-content;
 }
 
 #projects-title {
@@ -109,6 +117,10 @@ header {
 .projects-card-btn {
     color: #F24130;
     border-color: #F24130;
+}
+
+.card{
+    margin-bottom: 5%;
 }
 
 .card-img-top {
