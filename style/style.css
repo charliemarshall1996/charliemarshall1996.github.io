@@ -9,7 +9,7 @@ section {
 
 h1, h2, h3 {
     font-family: inter, sans-serif;
-    color: #F2385A;
+    color: black;
 }
 
 a, p{
@@ -69,17 +69,6 @@ table, .table {
 body, html {
     height: 100vh;
 }
-  
-.parallax-container {
-background-image: url("../assets/images/background.jpg");
-
-height: 100vh;
-
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
@@ -90,24 +79,39 @@ background-size: cover;
 
 /* HEADER */
 header {
-    width: 100vw;
-    height: 100vh;
+
+    background-color: black;
 }
 
 #header-container {
     align-self: center;
+    background-color: black;
+    height: 59em;
 }
 
 #hero-col {
-    flex-shrink: inherit;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-#hero-txt {
+#hero-txt{
     color: white;
-    font-size: 350%;
+    font-size: 4em;
+}
+
+#header-text {
+    color: white;
+    font-family: 'Kode Mono', monospace;
+    font-size: 2.5em;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.job-titles {
+    padding: 5%;
+    height: 10em;
+    text-wrap: none;
 }
 
 /* ABOUT ME */
@@ -126,38 +130,74 @@ header {
 }
 
 .accordion-btn {
-    color:#F2385A;
+    color:black;
 }
 
 .accordion-btn:hover {
-    border-color: #7580BF;
-    color: #7580BF;
+    border-color: #a1a1a1;
+    color: #a1a1a1;
 }
 
 /* PROJECTS */
 
 #projects {
-    background-color: #F24130;
+    background-color: black;
     height: fit-content;
 }
 
 #projects-title {
-    color:white;
+    color: white;
 }
 
 .projects-card-title {
-    color: #F24130;
+    color: black;
 }
 
 .projects-card-btn, .accordion-btn {
-    color: #F24130;
-    border-color: #F24130;
+    color: black;
+    border-color: black;
+}
+
+.project-item {
+    margin-right: auto;
 }
 
 .card{
     margin-bottom: 5%;
+    height: 25em;
+    width: 15em;
+
+}
+
+.card-text {
+    color: rgb(155, 155, 155);
+    font-weight: 200;
+}
+
+.card-footer {
+    height: 4em;
+    justify-self: center;
 }
 
 .card-img-top {
     max-height: 61%;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+#tag-filter {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
 }
