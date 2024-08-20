@@ -201,3 +201,16 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+
+.social-icon {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    width: 95%;
+    max-width: 50px;
+    
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
