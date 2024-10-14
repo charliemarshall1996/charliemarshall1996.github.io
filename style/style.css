@@ -202,12 +202,12 @@ header {
     flex-wrap: wrap;
 }
 
-.social-icon {
+.social-icon, .social-link {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
-    width: 95%;
     max-width: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+
     
 }
 

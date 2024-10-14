@@ -11,6 +11,7 @@
         rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
         crossorigin="anonymous"
+        defer
     />
     <!-- END BOOTSTRAP -->
     <!-- RESET -->
@@ -36,48 +37,44 @@
     <!-- END STYLES -->
 </head>
     <body>
-        <div class="container-fluid" id="header-container">
-            <div class="row">
-                <div class="col-9"></div>
-                <div class="col">
-                    <img src="assets/images/github_icon.png" alt="GitHub logo" id="github-logo" class="social-icon" href="https://github.com/charliemarshall1996">
-                </div>
-                <div class="col">
-                    <img src="assets/images/linkedin_icon.png" alt="LinkedIn logo" id="linkedin-logo" class="social-icon" href="https://www.linkedin.com/in/charliemarshall19961/">
-                </div>
-                <div class="col">
-                    <img src="assets/images/instagram_icon.png" alt="Twitter logo" id="twitter-logo" class="social-icon" href="https://www.instagram.com/charliemarshall.dev/">
-                </div>
+        <!-- Navbar -->
+        <div class="container-fluid vh-100" id="header-container">
+            <div class="navbar navbar-expand-lg bg-transparent pt-1">
+                    <a class="nav-item social-link p-2 ms-auto" href="https://github.com/charliemarshall1996"><img src="assets/images/github_icon.png" alt="GitHub logo" id="github-logo" class="social-icon img-fluid"></a>
+                    <a class="nav-item social-link p-2" href="https://www.linkedin.com/in/charliemarshall19961/"><img src="assets/images/linkedin_icon.png" alt="LinkedIn logo" id="linkedin-logo" class="social-icon img-fluid"></a>
+                    <a class="nav-item social-link p-2" href="https://www.instagram.com/charliemarshall.dev/"><img src="assets/images/instagram_icon.png" alt="Instagram logo" id="twitter-logo" class="social-icon img-fluid"></a>
             </div>
+            
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col text-center" id="hero-col">
+                        <p id="hero-txt">
+                            Charlie Marshall
+                        </p>
+                    </div>
+                </div>
+                <div class="row job-titles text-center">
+                    <div class="col">
+                        <p id="header-text"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a class="btn" id="downloadButton">My CV</a>
+                        <script src="script/script.js"></script>
+                    </div>
+                    <div class="col text-center">
+                        <a
+                            class="btn"
+                            href="mailto:charlie.marshall1996@gmail.com"
+                        >
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="col text-center" id="hero-col">
-                    <p id="hero-txt">
-                        Charlie Marshall
-                    </p>
-                </div>
-            </div>
-            <div class="row job-titles text-center">
-                <div class="col">
-                    <p id="header-text"></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    <a class="btn" id="downloadButton">My CV</a>
-                    <script src="script/script.js"></script>
-                </div>
-                <div class="col text-center">
-                    <a
-                        class="btn"
-                        href="mailto:charlie.marshall1996@gmail.com"
-                    >
-                        Get in Touch
-                    </a>
-                </div>
             </div>
         </div>
-        </header>
 
         <main>
             <section id="about-me">
@@ -119,231 +116,311 @@
                                 <div class="accordion-item">
                                     <h3
                                         class="accordion-header"
-                                        id="headingOne"
+                                        id="headingTechnicalSkills"
                                     >
                                         <button
                                             class="accordion-button collapsed accordion-btn"
                                             type="button"
                                             data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne"
+                                            data-bs-target="#collapseTechnicalSkills"
                                             aria-expanded="true"
-                                            aria-controls="collapseOne"
+                                            aria-controls="collapseTechnicalSkills"
                                         >
                                             Technical Skills
                                         </button>
                                     </h3>
                                     <div
-                                        id="collapseOne"
+                                        id="collapseTechnicalSkills"
                                         class="accordion-collapse collapse"
-                                        aria-labelledby="headingOne"
+                                        aria-labelledby="headingTechnicalSkills"
                                         data-bs-parent="#accordionExample"
                                     >
-                                        <div class="accordion-body">
-                                            <ul
-                                                class="list-group list-group-flush"
-                                            >
-                                                <li class="list-group-item">
-                                                    Python
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul
-                                                        class="list-group list-group-flush"
-                                                    >
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Pandas
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            SciPy
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            NumPy
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Beautiful Soup
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Selenium
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Flask
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            SciKitLearn
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            NLTK
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            PySpark
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            Matplotlib
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            Seaborn
-                                                        </li>
-                                                    </ul>
-                                                </li>
 
-                                                <li class="list-group-item">
-                                                    Machine Learning and AI
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul
-                                                        class="list-group list-group-flush"
+                                            <div class="accordion" id="python-accordion">
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingLanguages"
                                                     >
-                                                        <li
-                                                            class="list-group-item"
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseLanguages"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseLanguages"
                                                         >
-                                                            Natural Language
-                                                            Processing
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Microsoft Azure
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Data Preprocessing
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    JavaScript
-                                                </li>
-                                                <li class="list-group-item">
-                                                    SQL
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            PostgreSQL
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            SQLite
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    NoSQL
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            MongoDB
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    HTML5
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul
-                                                        class="list-group list-group-flush"
+                                                            Coding Languages
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseLanguages"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingLanguages">
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Python</li>
+                                                                <li class="list-group-item">SQL</li>
+                                                                <li class="list-group-item">
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">PostgreSQL</li>
+                                                                        <li class="list-group-item">SQLite</li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="list-group-item">NoSQL</li>
+                                                                <li class="list-group-item">
+                                                                    <ul class="list-group list-group-flush">
+                                                                        <li class="list-group-item">MongoDB</li>
+                                                                    </ul>
+                                                                </li>
+                                                                
+                                                                <li class="list-group-item">HTML</li>
+                                                                <li class="list-group-item">CSS</li>
+                                                                <li class="list-group-item">JavaScript</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingDB"
                                                     >
-                                                        <li
-                                                            class="list-group-item"
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseDB"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseDB"
                                                         >
-                                                            Bootstrap
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    CSS
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Microsoft Office
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul
-                                                        class="list-group list-group-flush"
+                                                            Data Engineering
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseDB"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingDB">
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Data Preprocessing, Cleaning & Wrangling</li>
+                                                                <li class="list-group-item">ETL</li>
+                                                                <li class="list-group-item">Database Design, Blueprinting & Schematics</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingDataAnalysis"
                                                     >
-                                                        <li
-                                                            class="list-group-item"
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseDataAnalysis"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseDataAnalysis"
                                                         >
-                                                            Word
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Excel
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Powerpoint
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Access
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
-                                                        >
-                                                            Teams
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    ClickUp
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Trello
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Atlassian
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <ul
-                                                        class="list-group list-group-flush"
+                                                            Data Analysis
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseDataAnalysis"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingDataAnalysis">
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Data Preprocessing</li>
+                                                                <li class="list-group-item">Exploratory Data Analysis</li>
+                                                                <li class="list-group-item">Visualization</li>
+                                                                <li class="list-group-item">Hypothesis Testing</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingPyPackages"
                                                     >
-                                                        <li
-                                                            class="list-group-item"
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapsePyPackages"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapsePyPackages"
                                                         >
-                                                            Jira
-                                                        </li>
-                                                        <li
-                                                            class="list-group-item"
+                                                            Python Packages & Libraries
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapsePyPackages"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingPyPackages">
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Pandas</li>
+                                                                <li class="list-group-item">Django</li>
+                                                                <li class="list-group-item">Scikit-learn</li>
+                                                                <li class="list-group-item">SQLAlchemy</li>
+                                                                <li class="list-group-item">NLTK</li>
+                                                                <li class="list-group-item">Spacy</li>
+                                                                <li class="list-group-item">Gensim</li>
+                                                                <li class="list-group-item">Selenium</li>
+                                                                <li class="list-group-item">Beautiful Soup</li>
+                                                                <li class="list-group-item">Requests</li>
+                                                                <li class="list-group-item">NumPy</li>
+                                                                <li class="list-group-item">Matplotlib</li>
+                                                                <li class="list-group-item">Seaborn</li>
+                                                                <li class="list-group-item">Flask</li>
+                                                                <li class="list-group-item">Librosa</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingWeb"
+                                                    >
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseWeb"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseWeb"
                                                         >
-                                                            Confluence
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Markdown
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Command Line
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Git
-                                                </li>
-                                                <li class="list-group-item">
-                                                    Telephone Skills
-                                                </li>
-                                            </ul>
+                                                            Front-End Development
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseWeb"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingWeb">
+                                                    
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">HTML5</li>
+                                                                <li class="list-group-item">CSS</li>
+                                                                <li class="list-group-item">JavaScript</li>
+                                                                <li class="list-group-item">Responsive Web Design</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingVCCLI"
+                                                    >
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseVCCLI"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseVCCLI"
+                                                        >
+                                                            Version Control & Command Line
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseVCCLI"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingVCCLI">
+                                                    
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Git</li>
+                                                                <li class="list-group-item">GitHub</li>
+                                                                <li class="list-group-item">Bash</li>
+                                                                <li class="list-group-item">Command Line</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingCollab"
+                                                    >
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseCollab"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseCollab"
+                                                        >
+                                                            Project Management & Collaboration
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseCollab"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingCollab">
+                                                    
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">ClickUp</li>
+                                                                <li class="list-group-item">Trello</li>
+                                                                <li class="list-group-item">Jira</li>
+                                                                <li class="list-group-item">Confluence</li>
+                                                                <li class="list-group-item">Kanban</li>
+                                                                <li class="list-group-item">GitHub</li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                    <h4
+                                                        class="accordion-header"
+                                                        id="headingOfficeSoftware"
+                                                    >
+                                                        <button
+                                                            class="accordion-button collapsed accordion-btn"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOfficeSoftware"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseOfficeSoftware"
+                                                        >
+                                                            Office Software
+                                                        </button>
+                                                    </h4>
+                                                    <div
+                                                        id="collapseOfficeSoftware"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingOfficeSoftware">
+                                                    
+                                                        <div class="accordion-body">
+                                                            <ul class="list-group list-group-flush">
+                                                                <li class="list-group-item">Word</li>
+                                                                <li class="list-group-item">Excel</li>
+                                                                <li class="list-group-item">Powerpoint</li>
+                                                                <li class="list-group-item">Outlook</li>
+                                                                <li class="list-group-item">Access</li>
+                                                                <li class="list-group-item">Teams</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
+
                                 <!-- SOFT SKILLS -->
                                 <div class="accordion-item">
                                     <h3
