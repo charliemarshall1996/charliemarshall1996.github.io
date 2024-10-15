@@ -2,7 +2,7 @@
 My professional portfolio website for applications development.
 
 ## Features
-- Parallax scrolling header
+- JavaScript job title reveal
 - CV download button
 - mailto: contact button
 - A bio, detailing my professional endeavours.
