@@ -179,10 +179,6 @@ header {
     justify-self: center;
 }
 
-.card-img-top {
-    max-height: 61%;
-}
-
 .filter-container {
     margin-bottom: 20px;
 }
@@ -213,4 +209,14 @@ header {
 
 .social-icon:hover {
     cursor: pointer;
+}
+
+.card-img-top {
+    min-height: 200px;  /* Set the desired fixed height */
+    object-fit: cover;  /* This will crop the image */
+    width: 100%;  /* Ensure the image takes up the full width of the card */
+  }
+
+.card-body {
+    height: 200px;
 }

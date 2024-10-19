@@ -1411,21 +1411,26 @@
 
 
     <!-- PROJECTS -->
-    <section id="projects">
-        <div class="container-fluid">
-            <div class="row d-flex">
-                <div class="col title">
-                    <h2 id="projects-title">Projects</h2>
-                </div>
+    <section id="projects" class="container-fluid">
+        <div class="row d-flex">
+            <div class="col title">
+                <h2 id="projects-title">Projects</h2>
             </div>
-            <select id="tag-filter" class="form-select" multiple>
+        </div>
+
+        <div class="row d-flex">
+            <select id="tag-filter" class="form-select mx-auto" multiple>
                 <option value="all">All</option>
+                <option value="boostrap">Bootstrap</option>
+                <option value="css">CSS</option>
                 <option value="cli">Command Line Interface</option>
                 <option value="data-engineering">Data Engineering</option>
                 <option value="data-management">Data Management</option>
                 <option value="data-science">Data Science</option>
+                <option value="django">Django</option>
                 <option value="etl">ETL</option>
                 <option value="git">Git</option>
+                <option value="html">HTML</option>
                 <option value="javascript">JavaScript</option>
                 <option value="jupyter-notebooks">Jupyter Notebooks</option>
                 <option value="matplotlib">MatPlotLib</option>
@@ -1438,63 +1443,71 @@
                 <option value="postgresql">PostgreSQL</option>
                 <option value="python">Python</option>
             </select>
-    
-            <div class="project-list">
-                <div class="row">
-                    <div class="col-md-4 project-item" data-tags="python,jupyter-notebooks,data-engineering,data-management,pandas,sql,postgresql,missingno">
-                        <div class="card d-flex">
-                            <img src="assets/images/citibike_data_management_cover.jpg" class="card-img-top" alt="A bicycle leaning on a dark wall.">
-                            <div class="card-body">
-                                <h5 class="card-title projects-card-title">Citibike Data Management</h5>
-                                <p class="card-text">Data management and database creation for Citibike data.</p>
-                            </div>
-                            <div class="card-footer ">
-                                <a href="https://github.com/charliemarshall1996/bike-rental-data-management" class="btn projects-card-btn">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 project-item" data-tags="python,jupyter-notebooks,data-engineering,data-management,pandas,sql,sqlite,etl,git">
-                        <div class="card d-flex">
-                            <img src="assets/images/etl_pipeline_project.jpg" class="card-img-top" alt="Desk with a smartphone and paper with graphs.">
-                            <div class="card-body">
-                                <h5 class="card-title projects-card-title">Subscriber Cancellation ETL Pipeline</h5>
-                                <p class="card-text">Subscriber cancellation ETL pipeline for analysis.</p>
-                            </div>
-                            <div class="card-footer ">
-                                <a href="https://github.com/charliemarshall1996/subscriber-cancellation-pipeline" class="btn projects-card-btn">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
+        </div>
 
-                    <div class="col-md-4 project-item" data-tags="python,cli">
-                        <div class="card d-flex">
-                            <img src="assets/images/you_want_to_be_a_millionaire_cover.jpg" class="card-img-top" alt="A pile of US dollar bills.">
-                            <div class="card-body">
-                                <h5 class="card-title projects-card-title">You Want to Be a Millionaire</h5>
-                                <p class="card-text">"Who Wants to Be a Millionaire"-style CLI game written in python.</p>
-                            </div>
-                            <div class="card-footer ">
-                                <a href="https://github.com/charliemarshall1996/you-want-to-be-a-millionaire" class="btn projects-card-btn">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 project-item" data-tags="python,jupyter-notebooks,data-science,pandas,matplotlib,seaborn,numpy">
-                        <div class="card d-flex">
-                            <img src="assets/images/health_insurance_project_cover.jpg" class="card-img-top" alt="A tiny toy ambulance.">
-                            <div class="card-body">
-                                <h5 class="card-title projects-card-title">US Medical Insurance Analysis</h5>
-                                <p class="card-text">In-depth analysis of the medical insurance costs.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/charliemarshall1996/regional-us-personal-medical-insurance-analysis" class="btn projects-card-btn">Find Out More</a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="project-list container mx-auto">
+
+            <div class="card project-item" data-tags="python,jupyter-notebooks,data-engineering,data-management,pandas,sql,postgresql,missingno">
+                <img src="assets/images/citibike_data_management_cover.jpg" class="card-img-top" alt="A bicycle leaning on a dark wall.">
+                <div class="card-body text-wrap text-truncate">
+                    <h5 class="card-title projects-card-title">Citibike Data Management</h5>
+                    <p class="card-text">Data management and database creation for Citibike data.</p>
+                </div>
+                <div class="card-footer text-center ">
+                    <a href="https://github.com/charliemarshall1996/bike-rental-data-management" class="btn projects-card-btn">Find Out More</a>
                 </div>
             </div>
-            <script src="script/script.js"></script>
+
+        
+            <div class="card project-item" data-tags="python,jupyter-notebooks,data-engineering,data-management,pandas,sql,sqlite,etl,git">
+                <img src="assets/images/etl_pipeline_project.jpg" class="card-img-top" alt="Desk with a smartphone and paper with graphs.">
+                <div class="card-body text-wrap text-truncate">
+                    <h5 class="card-title projects-card-title">Subscriber Cancellation ETL Pipeline</h5>
+                    <p class="card-text">Subscriber cancellation ETL pipeline for analysis</p>
+                </div>
+                <div class="card-footer text-center ">
+                    <a href="https://github.com/charliemarshall1996/subscriber-cancellation-pipeline" class="btn projects-card-btn">Find Out More</a>
+                </div>
+            </div>
+
+            <div class="card project-item" data-tags="python,cli">
+                <img src="assets/images/you_want_to_be_a_millionaire_cover.jpg" class="card-img-top" alt="A pile of US dollar bills.">
+                <div class="card-body text-wrap text-truncate">
+                    <h5 class="card-title projects-card-title">You Want to Be a Millionaire</h5>
+                    <p class="card-text">"Who Wants to Be a Millionaire"-style CLI game written in python.</p>
+                </div>
+                <div class="card-footer text-center ">
+                    <a href="https://github.com/charliemarshall1996/you-want-to-be-a-millionaire" class="btn projects-card-btn">Find Out More</a>
+                </div>
+            </div>
+
+            <div class="card project-item" data-tags="python,jupyter-notebooks,data-science,pandas,matplotlib,seaborn,numpy">
+                <img src="assets/images/health_insurance_project_cover.jpg" class="card-img-top" alt="A tiny toy ambulance.">
+                <div class="card-body text-wrap text-truncate">
+                    <h5 class="card-title projects-card-title">US Medical Insurance Analysis</h5>
+                    <p class="card-text">In-depth analysis of the medical insurance costs.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://github.com/charliemarshall1996/regional-us-personal-medical-insurance-analysis" class="btn projects-card-btn">Find Out More</a>
+                </div>
+            </div>
+
+            <div class="card project-item" data-tags="python,sql,sqlite,git,html,css,django,javascript,bootstrap">
+                <img src="assets/images/apptrack_logo.png" class="card-img-top" alt="AppTrack logo.">
+                <div class="card-body text-wrap text-truncate">
+                    <h5 class="card-title projects-card-title">AppTrack</h5>
+                    <p class="card-text">Freemium Job Application Tracking web app, built with Django.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://www.apptrack.app" class="btn projects-card-btn">Find Out More</a>
+                </div>
+            </div>
         </div>
+
+
+
+        <script src="script/script.js"></script>
+
     
     </section>
 
