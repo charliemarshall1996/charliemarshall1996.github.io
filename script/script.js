@@ -2,13 +2,13 @@
 document
     .getElementById("downloadButton")
     .addEventListener("click", function () {
-        fetch("../assets/documents/Charlie_Marshall_CV.pdf")
+        fetch("../assets/documents/charlie_marshall.docx")
             .then((response) => response.blob())
             .then((blob) => {
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement("a");
                 a.href = url;
-                a.download = "Charlie_Marshall_CV.pdf";
+                a.download = "charlie_marshall.docx";
                 a.type = 'application/pdf';
                 document.body.appendChild(a);
                 a.click();
