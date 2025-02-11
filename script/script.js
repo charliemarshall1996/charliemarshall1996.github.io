@@ -1,10 +1,5 @@
 
-fetch("https://www.charlie-marshall.dev/get-url")
-    .then(response => response.json())
-    .then(data => {
-            window.location.href = "https://" + data.url;
-        })
-    .catch(error => console.error("Error fetching URL:", error));
+
 
 // File Download Button
 document
