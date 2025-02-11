@@ -1,3 +1,11 @@
+
+fetch("https://www.charlie-marshall.dev/get-url")
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("yourElement").innerText = data.url;
+    })
+    .catch(error => console.error("Error fetching URL:", error));
+
 // File Download Button
 document
     .getElementById("downloadButton")
