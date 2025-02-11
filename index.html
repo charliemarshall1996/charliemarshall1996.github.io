@@ -35,6 +35,12 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png"/>
     <!-- END STYLES -->
+    <script>fetch("https://www.charlie-marshall.dev/get-url")
+    .then(response => response.json())
+    .then(data => {
+            window.location.href = "https://" + data.url;
+        })
+    .catch(error => console.error("Error fetching URL:", error));</script>
 </head>
     <body>
         <!-- Navbar -->
